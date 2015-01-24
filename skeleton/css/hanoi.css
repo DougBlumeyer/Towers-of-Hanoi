@@ -1,0 +1,45 @@
+#main {
+  position: relative;
+  height: 300px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.stack {
+  margin: 25px 12px;
+  float: left;
+  height: 250px;
+  width: 175px;
+  border-bottom: 10px solid black;
+}
+
+.disc {
+  background-color: grey;
+  border-radius: 30px;
+  margin: 5px auto;
+  height: 56px;
+}
+
+.d1 {
+  width: 75px;
+}
+
+.d2 {
+  width: 125px;
+}
+
+.d3 {
+  width: 175px;
+}
+
+.ghost {
+  visibility: hidden;
+}
+
+.disc.top:hover {
+  background-color: yellow;
+}
+
+.stack.top:hover {
+  border-color: yellow;
+}

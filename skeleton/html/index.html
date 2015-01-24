@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hanoi Game</title>
+    <link rel="stylesheet" type="text/css" href="../css/hanoi.css">
+  </head>
+  <body>
+    <script src="../js/jquery-2.1.1.js"></script>
+    <script src="../../hanoi-core-solution/hanoi-core.js"></script>
+    <script src="../js/hanoi-view.js"></script>
+
+    <script>
+      $(function(){
+        var g = new Hanoi.Game();
+        var $main = $('#main');
+        var hV = new Hanoi.View(g, $main);
+      })
+    </script>
+
+    <div id="main">
+      <div class="stack" id="s0"></div>
+      <div class="stack" id="s1"></div>
+      <div class="stack" id="s2"></div>
+    </div>
+  </body>
+</html>
