@@ -27,7 +27,8 @@
       if (j === this.game.towers[i].length - 1) {
         top = "top";
       }
-      $(this.$stacks[i]).prepend('<div class="disc ' + top + ' d' + this.game.towers[i][j] + '">');
+      $(this.$stacks[i]).prepend('<div class="disc ' + top
+        + ' d' + this.game.towers[i][j] + '">');
       if (j === this.game.towers[i].length - 1) {
         $('.d' + this.game.towers[i][j]).on('click', function() {
           that.clickTower(i);
